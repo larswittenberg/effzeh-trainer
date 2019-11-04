@@ -1,46 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Vanilla + Go API</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Welcome to a Static Site with Data from a Go API</h1>
-    <h2>
-      Deployed with
-      <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener"
-        >ZEIT Now</a
-      >!
-    </h2>
-    <p>
-      <a
-        href="https://github.com/zeit/now-examples/blob/master/vanilla-functions"
-        target="_blank"
-        rel="noreferrer noopener"
-        >This project</a
-      >
-      includes three files. A static <code>index.html</code> file as the
-      homepage, a static <code>style.css</code> file for styling, and a
-      <code>api/date.go</code> serverless function that returns the date on
-      invocation. See
-      <a href="/api/date.go"
-        ><code>api/date.go</code> for the Date API with Go</a
-      >.
-    </p>
-    <br />
-    <h3>The date according to Go is:</h3>
-    <p class="date">Loading date...</p>
-    <script>
-      function main() {
-        return fetch('/api/date.go')
-          .then(function(response) {
-            return response.text();
-          })
-          .then(function(date) {
-            document.querySelector('.date').textContent = date;
-          });
-      }
-      main();
-    </script>
-  </body>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>Ist Achim Beierlorzer noch Trainer beim 1. FC Köln?</title>
+	<style>
+		html {
+			font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			box-sizing: border-box;
+			overflow-y: scroll;
+		}
+		body {
+			margin: 0;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		main,
+		menu,
+		nav,
+		section,
+		summary {
+			display: block;
+		}
+		a {
+			background-color: transparent;
+			-webkit-text-decoration-skip: objects;
+		}
+		a:active,
+		a:hover {
+			outline-width: 0;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			height: 100vh;
+			text-align: center;
+		}
+		main {
+			width: 90%;
+			/* max-width: 600px; */
+		}
+		.question {
+			margin-top: 0;
+			margin-bottom: 1em;
+			font-size: 8vw;
+			line-height: 1.2;
+			font-weight: bold;
+			text-rendering: optimizeLegibility;
+		}
+		.answer {
+			font-size: 5em;
+			line-height: 1.2;
+			margin: 0;
+		}
+		.effzeh {
+			white-space: nowrap;
+		}
+		.small {
+			font-size: 2vw;
+			color: #666;
+		}
+	</style>
+</head>
+
+<body>
+	<main class="wrapper">
+		<h1 class="question">Ist Achim Beierlorzer noch Trainer beim <span class="effzeh">1. FC Köln</span>?</h1>
+		<p class="answer">Ja.</p>
+		<p class="small">Stand: 04.11.2019 22:00</p>
+	</main>
+	<footer>
+		<a href="https://twitter.com/larswittenberg">@larswittenberg</a>
+	</footer>
+</body>
 </html>
