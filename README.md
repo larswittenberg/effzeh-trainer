@@ -4,7 +4,9 @@ https://istachimbeierlorzernochfctrainer.now.sh/
 
 Deployed with [ZEIT Now](https://zeit.co/docs)!
 
-Go Live am 04.11.2019 gegen 22:30 Uhr.
+## Updates
+_ Go Live am 04.11.2019 gegen 22:30 Uhr.
+_ Umstellung auf Tim Walter am 20.12. 20:00 Uhr
 
 
 ## Open Graph Debugger Links:
