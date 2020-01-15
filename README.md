@@ -1,5 +1,8 @@
-effzeh-Trainer
+Trainer-Status
 
+https://isttimwalternochvfbtrainer.now.sh/
+
+Alt:
 https://istachimbeierlorzernochfctrainer.now.sh/
 
 Deployed with [ZEIT Now](https://zeit.co/docs)!
